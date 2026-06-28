@@ -1,0 +1,143 @@
+/* --- Your Original Styles --- */
+.stApp {
+    background: #f8e2d0;
+    color: #461b2a;
+    font-family: "Poppins", sans-serif;
+}
+
+.stButton > button {
+    background: linear-gradient(90deg, #A5937B, #918882);
+    color: #170c0c;
+    border-radius: 12px;
+    height: 50px;
+    font-weight: 600;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+}
+
+div[data-testid="stMetric"] {
+    background: rgb(19, 11, 11);
+    border-radius: 14px;
+    padding: 15px;
+    border: 1px solid #AF9AC9;
+}
+
+section[data-testid="stSidebar"] {
+    background: #110a00;
+    color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #65615e;
+}
+
+/* --- Heading Size Customization --- */
+h2, h3, 
+[data-testid="stMarkdownContainer"] h2, 
+[data-testid="stMarkdownContainer"] h3 {
+    font-size: 32px !important; 
+    font-weight: 600 !important;
+    color: #461b2a !important;
+}
+
+/* --- Form Label Enhancements --- */
+/* Target all label attributes under basic info and work characteristics sections */
+[data-testid="stWidgetLabel"] p, 
+label, 
+.stSlider p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #461b2a !important; /* Changed to a visible dark shade */
+}
+
+/* --- Unifying Work Characteristics / Form Components Colors --- */
+/* Form inputs, selectboxes, and number steps background consistency */
+div[data-baseweb="select"] > div,
+div[data-baseweb="input"] > div,
+input {
+    background-color: #0e0103 !important; /* Dark cohesive field color */
+    color: hsl(25, 35%, 93%) !important;
+}
+
+/* Ensure selected items inside pickers remain clearly visible */
+div[data-testid="stSelectbox"] div {
+    color: #E9E3DE !important;
+}
+
+/* --- Notification Boxes Color System Fix (st.info, st.success, st.warning) --- */
+/* Hard override background color to #666161 and font color to #E9E3DE */
+div[data-testid="stNotificationV2"],
+div[data-testid="stNotificationV2"] > div,
+.stAlert {
+    background-color: #666161 !important;
+    color: #E9E3DE !important;
+    border-color: transparent !important;
+}
+
+/* Force all text variants inside notification components to render cleanly */
+div[data-testid="stNotificationV2"] p,
+div[data-testid="stNotificationV2"] span,
+div[data-testid="stNotificationV2"] div,
+div[data-testid="stNotificationV2"] markdown,
+.stAlert p,
+.stAlert span,
+.stAlert div {
+    color: #E9E3DE !important;
+}
+
+/* Set icon colors to match cleanly against dark background setup */
+div[data-testid="stNotificationV2"] svg,
+.stAlert svg {
+    fill: #E9E3DE !important;
+    color: #E9E3DE !important;
+}
+/* ================================
+   ABOUT PAGE TEXT SIZE
+================================ */
+
+section.main .block-container p {
+    font-size: 18px !important;
+    line-height: 1.8;
+}
+
+/* Info / Success / Warning text inside ABOUT */
+.stInfo, .stSuccess, .stWarning, .stError {
+    font-size: 26px !important;
+    line-height: 2.7;
+}
+/* ================================
+   ANALYTICS HEADINGS COLOR
+================================ */
+
+h1, h2, h3 {
+    color: #2F2A36 !important;   /* darker elegant tone */
+}
+
+/* specifically analytics page headings */
+section[data-testid="stAppViewContainer"] h1,
+section[data-testid="stAppViewContainer"] h2,
+section[data-testid="stAppViewContainer"] h3 {
+    color: #2F2A36 !important;
+}
+/* ================================
+   SIDEBAR HEADING COLORS
+================================ */
+
+section[data-testid="stSidebar"] h1 {
+    color: #FFFFFF !important;
+}
+
+section[data-testid="stSidebar"] h2 {
+    color: #E3C49B !important;   /* soft gold accent */
+}
+
+section[data-testid="stSidebar"] h3 {
+    color: #F5F2EF !important;
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span {
+    color: #F0ECE7 !important;
+}
