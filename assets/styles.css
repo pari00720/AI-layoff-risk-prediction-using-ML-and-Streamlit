@@ -18,10 +18,10 @@
 }
 
 div[data-testid="stMetric"] {
-    background: rgb(19, 11, 11);
+    background: rgb(221, 201, 201);
     border-radius: 14px;
     padding: 15px;
-    border: 1px solid #AF9AC9;
+    border: 1px solid #170202;
 }
 
 section[data-testid="stSidebar"] {
@@ -140,4 +140,26 @@ section[data-testid="stSidebar"] h3 {
 section[data-testid="stSidebar"] p,
 section[data-testid="stSidebar"] span {
     color: #F0ECE7 !important;
+}
+/* ==========================================
+   METRIC LABELS FIX
+========================================== */
+
+/* Metric titles like Prediction, Confidence, Job Role,
+   Total Employees, Industries, etc. */
+
+div[data-testid="stMetric"] label,
+div[data-testid="stMetric"] p,
+div[data-testid="stMetric"] div[data-testid="stMetricLabel"] {
+    color: #110b01 !important;   /* Light warm grey */
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.4px;
+}
+
+/* Metric values */
+
+div[data-testid="stMetricValue"] {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
 }
